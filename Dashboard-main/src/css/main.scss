@@ -246,6 +246,11 @@ body {
     //   background-color: green;
     // }
     #right-box {
+        background-image: url(../Asserts/image/Ellipse8.png);
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         // border: 2px solid yellow;
@@ -263,7 +268,7 @@ body {
             margin-top: 36px;
             padding: 20px 30px 20px 30px;
             background: #1c1c1c;
-            // opacity: 0.6;
+            opacity: 0.8;
             backdrop-filter: blur(20px);
             border-radius: 16px;
 
