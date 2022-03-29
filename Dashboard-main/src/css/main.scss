@@ -8,9 +8,9 @@ $backgrond: #080808;
 }
 
 body {
-    border: 1px solid yellow;
     width: 100vw;
     height: 100vh;
+
     overflow: hidden;
 }
 
@@ -18,34 +18,25 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: space-around;
     padding: 42px 40px 48px 40px;
+    background-image: url(../Asserts/image/BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: $backgrond;
 
     #left-box {
         display: flex;
         flex-direction: column;
-        // align-items: center;
-        // justify-content: space-between;
-        // border: 2px solid red;
-        // width: 25vw;
-        // height: 90vh;
-        // #logo {
-        // border: 2px solid red;
-        //     width: 25vw;
-        // }
         .access-menu {
             display: flex;
             flex-direction: column;
-            // height: 50vh;
-            // justify-content: space-between;
-            // border: 2px solid red;
             margin-top: 48px;
 
             #dashboard {
                 display: flex;
-                // border: 2px solid red;
                 background: linear-gradient(101.05deg, #1f8ebe -5.36%, #440495 29.46%, #440495 56.03%, #b102cd 81.92%);
-                // width: 15vw;
                 width: 233px;
                 height: 56px;
                 border-radius: 16px;
@@ -53,7 +44,7 @@ body {
                     padding: 16px 0px 16px 25px;
                 }
                 p {
-                    font: normal 500 18px/ 22px "Inter, sans-serif";
+                    font: normal 500 18px/ 22px "Inter", sans-serif;
                     color: #fff;
                     padding: 16px 71px 18px 19px;
                 }
@@ -61,8 +52,6 @@ body {
 
             #trade {
                 display: flex;
-                // border: 2px solid red;
-                // width: 15vw;
                 width: 233px;
                 height: 56px;
                 border-radius: 16px;
@@ -71,7 +60,7 @@ body {
                     padding: 16px 0px 16px 25px;
                 }
                 p {
-                    font: normal 500 18px/ 22px "Inter, sans-serif";
+                    font: normal 500 18px/ 22px "Inter", sans-serif;
                     color: #fff;
                     padding: 16px 71px 18px 19px;
                 }
@@ -90,9 +79,7 @@ body {
             }
 
             #deposits {
-                // width: 15vw;
                 display: flex;
-                // border: 2px solid red;
                 width: 233px;
                 height: 56px;
                 border-radius: 16px;
@@ -119,9 +106,7 @@ body {
             }
 
             #protocols {
-                // width: 15vw;
                 display: flex;
-                // border: 2px solid red;
                 width: 233px;
                 height: 56px;
                 border-radius: 16px;
@@ -148,8 +133,6 @@ body {
             }
 
             #settings {
-                // width: 15vw;
-                // border: 2px solid red;
                 display: flex;
                 width: 233px;
                 height: 56px;
@@ -177,9 +160,7 @@ body {
             }
 
             #profile {
-                // width: 15vw;
                 display: flex;
-                // border: 2px solid red;
                 width: 233px;
                 height: 56px;
                 border-radius: 16px;
@@ -206,12 +187,8 @@ body {
                 }
             }
         }
-
         #box-exit-button {
-            // border: 2px solid red;
             display: flex;
-            // width: 15vw;
-            // height: 20vh;
             align-items: flex-end;
             height: 50%;
             .exit-button {
@@ -241,28 +218,208 @@ body {
             }
         }
     }
-    // #center-box {
-    //   width: 100px;
-    //   background-color: green;
-    // }
-    #right-box {
-        background-image: url(../Asserts/image/Ellipse8.png);
-        height: 500px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    #center-box {
         display: flex;
         flex-direction: column;
-        // border: 2px solid yellow;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 36px;
 
+            #text {
+                h2 {
+                    font: normal 600 24px/ 28px "Roboto", sans-serif;
+                    color: #fff;
+                }
+            }
+            .search {
+                display: flex;
+                border-radius: 16px;
+                background-color: rgba(28, 31, 37, 1);
+                width: 281px;
+                height: 41px;
+
+                i {
+                    cursor: pointer;
+                    align-self: center;
+                    padding: 12px 20px 12px 16px;
+                }
+                input {
+                    background-color: rgba(28, 31, 37, 0.6);
+                    border-radius: 16px;
+                    border: none;
+                    &::placeholder {
+                        font: normal 500 18px/ 22px "Inter", sans-serif;
+                        color: #a0a0a0;
+                        padding: 12px 80px 12px 16px;
+                    }
+                }
+            }
+        }
+        .application-box {
+            display: flex;
+            flex-direction: column;
+            width: 773px;
+            height: 593px;
+            background: #1c1c1c;
+            opacity: 0.8;
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            justify-content: center;
+            .application-values {
+                display: flex;
+                justify-content: space-around;
+                padding-top: 40px;
+                #total-assets {
+                    display: flex;
+                    height: 70px;
+                    i {
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgba(176, 176, 176, 0.1);
+                        border-radius: 13px;
+                        margin-right: 9px;
+                        img {
+                            padding: 13.5px 14px 14.67px 14px;
+                        }
+                    }
+                    .assets-values {
+                        #title-assets {
+                            font: normal 500 14px/ 17px "Inter", sans-serif;
+                            color: #fff;
+                            margin-bottom: 4px;
+                        }
+                        #text-assets {
+                            font: normal 700 24px/ 29px "Inter", sans-serif;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                #total-deposits {
+                    display: flex;
+                    height: 70px;
+                    i {
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgba(176, 176, 176, 0.1);
+                        border-radius: 13px;
+                        margin-right: 9px;
+
+                        img {
+                            padding: 13.5px 14px 14.67px 14px;
+                        }
+                    }
+
+                    .deposits-values {
+                        #title-deposits {
+                            font: normal 500 14px/ 17px "Inter", sans-serif;
+                            color: #fff;
+                            margin-bottom: 4px;
+                        }
+                        #text-deposits {
+                            font: normal 700 24px/ 29px "Inter", sans-serif;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                #apy {
+                    display: flex;
+                    height: 70px;
+                    i {
+                        width: 60px;
+                        height: 60px;
+                        background-color: rgba(176, 176, 176, 0.1);
+                        border-radius: 13px;
+                        margin-right: 9px;
+
+                        img {
+                            padding: 13.5px 14px 14.67px 14px;
+                        }
+                    }
+                    .apy-values {
+                        #title-apy {
+                            font: normal 500 14px/ 17px "Inter", sans-serif;
+                            color: #fff;
+                            margin-bottom: 4px;
+                        }
+                        #text-apy {
+                            font: normal 700 24px/ 29px "Inter", sans-serif;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .grafic-image {
+                padding: 46px 38.42px 47.63px 39px;
+            }
+        }
+        .tokens {
+            border-radius: 16px;
+            margin-top: 30px;
+            background-color: #1c1c1c;
+            h4 {
+                font: normal 600 20px/ 24px "Inter", sans-serif;
+                color: #fff;
+                padding: 10px 0 0 41px;
+            }
+            .grid-tokens {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                padding: 0 0 0 40px;
+                .titles {
+                    font: normal 500 14px/ 17px "Inter", sans-serif;
+                    color: #878787;
+                    padding: 10px 0 20px 0;
+                }
+                .values {
+                    font: normal 600 16px/ 19px "Inter", sans-serif;
+                    color: #fff;
+                    padding: 0 0 35px 0;
+                }
+                .button-trade {
+                    width: 72px;
+                    height: 27px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border-radius: 6px;
+                    font: normal 500 16px/ 19px "Inter", sans-serif;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+            #bitcoin-token {
+                display: flex;
+                p {
+                    font: normal 600 16px/ 19px "Inter", sans-serif;
+                    color: #fff;
+                    margin-left: 12px;
+                }
+            }
+            #ethereum-token {
+                display: flex;
+                img {
+                    background: linear-gradient(144.64deg, #ffffff 6.13%, rgba(217, 217, 217, 0.71) 99.08%);
+                    border-radius: 25px;
+                }
+                p {
+                    font: normal 600 16px/ 19px "Inter", sans-serif;
+                    color: #fff;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+    #right-box {
+        display: flex;
+        flex-direction: column;
         #user {
             display: flex;
             justify-content: flex-end;
-            // border: 2px solid green;
         }
 
         .progress-box {
-            // border: 2px dashed red;
             display: flex;
             flex-direction: column;
             margin-top: 36px;
@@ -276,7 +433,7 @@ body {
                 display: flex;
                 margin-bottom: 20px;
                 h4 {
-                    font: normal 500 18px/ 22px "Inter, sans-serif";
+                    font: normal 500 18px/ 22px "Inter", sans-serif;
                     color: #fff;
                 }
             }
@@ -292,14 +449,14 @@ body {
                     #bitcoin-name-logo {
                         display: flex;
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                             padding: 0 0 0 12px;
                         }
                     }
                     #bitcoin-values {
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -326,7 +483,7 @@ body {
                         margin-top: 15px;
                         margin-left: 8px;
                         p {
-                            font: normal 500 14px/ 19px "Inter, sans-serif";
+                            font: normal 500 14px/ 19px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -349,14 +506,14 @@ body {
                             border-radius: 100px;
                         }
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                             padding: 0 0 0 12px;
                         }
                     }
                     #ethereum-values {
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -383,7 +540,7 @@ body {
                         margin-top: 17px;
                         margin-left: 8px;
                         p {
-                            font: normal 500 14px/ 19px "Inter, sans-serif";
+                            font: normal 500 14px/ 19px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -401,17 +558,17 @@ body {
                     justify-content: space-between;
                     #shiba-name-logo {
                         display: flex;
-                        p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
-                            color: #fff;
-                            padding: 0 0 0 12px;
-                        }
                     }
-                    #shiba-values {
-                        p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
-                            color: #fff;
-                        }
+                    p {
+                        font: normal 600 16px/ 19px "Inter", sans-serif;
+                        color: #fff;
+                        padding: 0 0 0 12px;
+                    }
+                }
+                #shiba-values {
+                    p {
+                        font: normal 600 16px/ 19px "Inter", sans-serif;
+                        color: #fff;
                     }
                 }
                 .progress-data {
@@ -436,7 +593,7 @@ body {
                         margin-top: 15px;
                         margin-left: 8px;
                         p {
-                            font: normal 500 14px/ 17px "Inter, sans-serif";
+                            font: normal 500 14px/ 17px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -455,14 +612,14 @@ body {
                     #solona-name-logo {
                         display: flex;
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                             padding: 0 0 0 12px;
                         }
                     }
                     #solona-values {
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -489,7 +646,7 @@ body {
                         margin-top: 15px;
                         margin-left: 8px;
                         p {
-                            font: normal 500 14px/ 17px "Inter, sans-serif";
+                            font: normal 500 14px/ 17px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -508,14 +665,14 @@ body {
                     #tether-name-logo {
                         display: flex;
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                             padding: 0 0 0 12px;
                         }
                     }
                     #tether-values {
                         p {
-                            font: normal 600 16px/ 19px "Inter, sans-serif";
+                            font: normal 600 16px/ 19px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -542,7 +699,7 @@ body {
                         margin-top: 15px;
                         margin-left: 8px;
                         p {
-                            font: normal 500 14px/ 17px "Inter, sans-serif";
+                            font: normal 500 14px/ 17px "Inter", sans-serif;
                             color: #fff;
                         }
                     }
@@ -557,36 +714,36 @@ body {
                 border: none;
                 cursor: pointer;
                 border-radius: 12px;
-                font: normal 500 16px/ 19px "Inter, sans-serif";
+                font: normal 500 16px/ 19px "Inter", sans-serif;
                 color: #fff;
             }
         }
-
         .join {
-            padding: 5px 7px 6px 7px;
-            margin-top: 30px;
+            width: 284px;
+            height: 281px;
+            padding: 10px 5px;
+            margin-top: 18px;
             background-color: #1c1c1c;
             border-radius: 16px;
-            // border: 2px dashed #fa9fa5;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             h4 {
-                margin-top: 5px;
-                font: normal 700 16px/ 19px "Inter, sans-serif";
+                margin-bottom: 12px;
+                font: normal 700 16px/ 19px "Inter", sans-serif;
                 color: #fff;
             }
 
             p {
-                margin-top: 3px;
-                font: normal 400 10px/ 19px "Inter, sans-serif";
+                margin-bottom: 15px;
+                font: normal 400 10px/ 19px "Inter", sans-serif;
                 color: #fff;
             }
 
             #join-button {
-                margin-top: 6px;
+                margin-bottom: 24px;
                 padding: 10px 80px 9px 79px;
                 cursor: pointer;
                 border: none;
