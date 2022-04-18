@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dashboard Cryptfest</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-box">
+            <div id="logo">
+                <img src="asserts/icon/24/Logo.svg" alt="">
+            </div>
+            <nav id="access-menu">
+                <button type="button" id="dashboard">
+                     <img src="asserts/icon/24/dasboard.svg" alt="dashboard-icon">
+                    <p>Dashboard</p>
+                </button>
+                <button type="button">
+                    <img src="asserts/icon/24/trade.svg" alt="trade-icon">
+                    <p>Trade</p>
+                </button>
+                <button id="deposits">
+                    <img src="asserts/icon/24/donate.svg" alt="deposit-icon">
+                    <p>Deposits</p>
+                </button>
+                <button type="button">
+                    <img src="asserts/icon/24/protocols.svg" alt="protocol-icon">
+                    <p>Protocols</p>
+                </button>
+                <button type="button">
+                    <img src="asserts/icon/24/setting.svg" alt="setting-icon">
+                    <p>Settings</p>
+                </button>
+                <button type="button">
+                    <img src="asserts/icon/24/user.svg" alt="user-icon">
+                    <p>Profile</p>
+                </button>
+            </nav>
+            <div id="box-exit-button">
+                <button type="button">
+                    <img src="asserts/icon/24/logout-1 1.svg" alt="">
+                    <p>Log Out</p>
+                </button>
+            </div>
+        </div>
+        <div class="center-box">
+            <header>
+                <strong>Welcome Back, Arkhan</strong>
+                <div id="search-notification-container">
+                    <div id="input-container">
+                        <button type="button">
+                            <img src="asserts/icon/24/search.svg" alt="Search icon">
+                        </button>
+                        <input type="text" name="search" id="search" placeholder="Search">
+                    </div>
+
+                    <button type="button">
+                        <img src="asserts/icon/24/Notifications-with-6-alert.svg" alt="Notifications icon">
+                    </button>
+                </div>
+
+                <div id="user-container">
+                    <img src="asserts/icon/24/User-login.svg" alt="User icon">
+                </div>
+            </header>
+            <div id="content">
+                <div id="large-content">
+                    <div id="application-container">
+                        <div class="cards">
+                            <div class="img-cards">
+                                <img src="asserts/icon/24/moneys.svg" alt="Moneys">
+                                <div class="cards-values">
+                                    <p class="cards-title">Total assets</p>
+                                    <strong class="cards-quantity">$ 87.743</strong>
+                                </div>
+                            </div>
+                            <div class="img-cards">
+                                <img src="asserts/icon/24/wallet-money.svg" alt="Moneys">
+                                <div class="cards-values">
+                                    <p class="cards-title">Total deposits</p>
+                                    <strong class="cards-quantity">$ 78.342</strong>
+                                </div>
+                            </div>
+                            <div class="img-cards">
+                                <img src="asserts/icon/24/chart-square.svg" alt="Moneys">
+                                <div class="cards-values">
+                                    <p class="cards-title">APY</p>
+                                    <strong class="cards-quantity">+ 12.3%</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="asserts/image/grafic.svg" alt="">
+                    </div>
+                    <div id="tokens">
+                        <strong>Tokens</strong>
+                        <div id="grid-coins">
+                            <p>Name</p>
+                            <p>Balance</p>
+                            <p>Total Value</p>
+                            <p id="trade">Trade</p>
+                            <div class="coin-token">
+                                <img src="asserts/logo/24/bitcoin.svg" alt="bitcoin icon">
+                                <p>Bitcoin</p>
+                            </div>
+                            <p>0,04321</p>
+                            <p>$2,340.32</p>
+                            <button class="trade">Trade</button>
+                            <div class="coin-token">
+                                <img src="asserts/logo/24/ethereum.svg" alt="ethereum icon">
+                                <p>Ethereum</p>
+                            </div>
+                            <p>32,234</p>
+                            <p>$5,340.32</p>
+                            <button class="trade">Trade</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="side-content">
+                    <div id="coins-container">
+                        <p id="chain-allocation">Chain Allocation</p>
+
+                        <div class="coin-container">
+                            <div class="top-content">
+                                <div class="img-coin-container">
+                                    <img src="asserts/logo/24/bitcoin.svg" alt="">
+                                    <p>Bitcoin</p>
+                                </div>
+                                <p class="coin-value">$23,3B</p>
+                            </div>
+                            <div class="progress-bar">
+                                <progress id="bitcoin-coin" value="71.68" max="100"> </progress> 71,68%
+                            </div>
+                        </div>
+                        <div class="coin-container">
+                            <div class="top-content">
+                                <div class="img-coin-container">
+                                    <i><img src="asserts/logo/24/ethereum.svg" alt="ethereum"></i>
+                                    <p>Ethereum</p>
+                                </div>
+                                <p class="coin-value">$23,3B</p>
+                            </div>
+                            <div class="progress-bar">
+                                <progress id="ethereum-coin" value="71.68" max="100"> </progress> 71,68%
+                            </div>
+                        </div>
+                        <div class="coin-container">
+                            <div class="top-content">
+                                <div class="img-coin-container">
+                                    <img src="asserts/logo/24/shiba.svg" alt="">
+                                    <p>Shiba</p>
+                                </div>
+                                <p class="coin-value">$23,3B</p>
+                            </div>
+                            <div class="progress-bar">
+                                <progress id="shiba-coin" value="71.68" max="100"> </progress> 71,68%
+                            </div>
+                        </div>
+                        <div class="coin-container">
+                            <div class="top-content">
+                                <div class="img-coin-container">
+                                    <img src="asserts/logo/24/solona.svg" alt="">
+                                    <p>Solona</p>
+                                </div>
+                                <p class="coin-value">$23,3B</p>
+                            </div>
+                            <div class="progress-bar">
+                                <progress id="solona-coin" value="71.68" max="100"> </progress> 71,68%
+                            </div>
+                        </div>
+                        <div class="coin-container">
+                            <div class="top-content">
+                                <div class="img-coin-container">
+                                    <img src="asserts/logo/24/tether.svg" alt="">
+                                    <p>Tether</p>
+                                </div>
+                                <p class="coin-value">$23,3B</p>
+                            </div>
+                            <div class="progress-bar">
+                                <progress id="tether-coin" value="71.68" max="100"> </progress> 71,68%
+                            </div>
+                        </div>
+
+                        <div class="button-container">
+                            <button type="button">
+                          View All
+                        </button>
+                        </div>
+                    </div>
+
+                    <div id="join-container">
+                        <img src="asserts/icon/24/Group.svg" alt="group people">
+                        <strong>Join Our Community</strong>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="button-container">
+                            <button type="button">
+                          Join Now
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
